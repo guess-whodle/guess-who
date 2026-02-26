@@ -1,0 +1,140 @@
+body { font-family: system-ui, sans-serif; margin: 0; background:#0b0f16; color:#e8eefc; }
+.wrap { max-width: 520px; margin: 0 auto; padding: 18px; }
+h1 { margin: 0 0 12px; }
+canvas { display:block; margin: 10px 0 14px; border-radius: 14px; background:#111827; width: 320px; height: 320px; image-rendering: pixelated; }
+.row { display:flex; gap:10px; }
+input { flex:1; padding:12px; border-radius: 12px; border:1px solid #243042; background:#0f172a; color:#e8eefc; }
+button { padding:12px 14px; border-radius: 12px; border:1px solid #243042; background:#111827; color:#e8eefc; cursor:pointer; }
+button:hover { filter: brightness(1.1); }
+.hint { color:#a7b4d1; min-height: 1.2em; }
+.log { padding-left: 18px; }
+.link { margin-top: 8px; background: transparent; border-color:#243042; }
+.ok { color:#34d399; }
+.bad { color:#f87171; }
+
+/* ---- UI tipo tiles (Match / Close / No match) ---- */
+
+.attempts { display:flex; flex-direction:column; gap:12px; margin-top: 10px; }
+
+.attempt {
+  border: 1px solid #243042;
+  background: #0f172a;
+  border-radius: 16px;
+  padding: 12px;
+}
+
+.attemptHeader {
+  display:flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.attemptName { font-weight: 700; }
+.attemptMeta { color:#a7b4d1; font-size: 12px; }
+
+.tiles {
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.tile{
+  border-radius: 14px;
+  padding: 12px;
+  border: 1px solid #243042;
+  background: #111827;
+  min-height: 56px;
+}
+
+.tileLabel{ font-size: 12px; color:#a7b4d1; margin-bottom: 4px; }
+.tileValue{ font-size: 18px; font-weight: 800; line-height: 1.1; }
+.tileSub{ font-size: 12px; color:#a7b4d1; margin-top: 4px; }
+
+/* Estados */
+.tile.nomatch { background:#111827; }
+.tile.close   { background:#3a2f08; border-color:#6b4f00; }  /* amarillo oscuro */
+.tile.match   { background:#053a1e; border-color:#0c6b3a; }  /* verde oscuro */
+
+/* Leyenda */
+.legend { display:flex; gap:10px; margin-top:10px; }
+.legendPill{
+  padding:8px 10px; border-radius: 12px;
+  border:1px solid #243042;
+  font-size: 12px;
+}
+.legendPill.nomatch{ background:#111827; }
+.legendPill.close{ background:#3a2f08; border-color:#6b4f00; }
+.legendPill.match{ background:#053a1e; border-color:#0c6b3a; }
+
+/* ---- UI tipo tiles (Match / Close / Wrong) ---- */
+
+.attempts { display:flex; flex-direction:column; gap:12px; margin-top: 10px; }
+
+.attempt {
+  border: 1px solid #243042;
+  background: #0f172a;
+  border-radius: 16px;
+  padding: 12px;
+}
+
+.attemptHeader {
+  display:flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.attemptName { font-weight: 700; }
+.attemptMeta { color:#a7b4d1; font-size: 12px; }
+
+.tiles {
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.tile{
+  border-radius: 14px;
+  padding: 12px;
+  border: 1px solid #243042;
+  background: #111827;
+  min-height: 56px;
+}
+
+.tileLabel{ font-size: 12px; color:#a7b4d1; margin-bottom: 4px; }
+.tileValue{ font-size: 18px; font-weight: 800; line-height: 1.1; }
+.tileSub{ font-size: 12px; color:#a7b4d1; margin-top: 4px; }
+
+/* Estados */
+.tile.match { background:#053a1e; border-color:#0c6b3a; }   /* verde */
+.tile.close { background:#3a2f08; border-color:#6b4f00; }   /* amarillo */
+.tile.wrong { background:#3a0b0b; border-color:#7f1d1d; }   /* rojo */
+
+/* Leyenda */
+.legend { display:flex; gap:10px; margin-top:10px; flex-wrap: wrap; }
+.legendPill{
+  padding:8px 10px; border-radius: 12px;
+  border:1px solid #243042;
+  font-size: 12px;
+}
+.legendPill.match{ background:#053a1e; border-color:#0c6b3a; }
+.legendPill.close{ background:#3a2f08; border-color:#6b4f00; }
+.legendPill.wrong{ background:#3a0b0b; border-color:#7f1d1d; }
+
+/* Canvas vacío */
+.canvasEmpty {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width: 320px;
+  height: 320px;
+  border-radius: 14px;
+  border:1px dashed #243042;
+  color:#a7b4d1;
+  background:#111827;
+  margin: 10px 0 14px;
+  user-select:none;
+}

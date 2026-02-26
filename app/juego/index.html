@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Imgdle</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>Imgdle</h1>
+
+    <canvas id="canvas" width="320" height="320" aria-label="Imagen del reto"></canvas>
+
+    <div class="row">
+      <input id="guess" type="text" placeholder="Escribe un nombre…" autocomplete="off" list="names" />
+      <button id="btn">Probar</button>
+    </div>
+
+    <datalist id="names"></datalist>
+
+    <p id="hint" class="hint"></p>
+
+    <!-- Antes era <ol id="log"> -->
+    <div id="log" class="attempts"></div>
+
+    <button id="reset" class="link">Reiniciar (solo local)</button>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

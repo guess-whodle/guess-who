@@ -1,0 +1,121 @@
+[
+  {
+    "id": "a1",
+    "name": "artista uno",
+    "aliases": ["uno"],
+    "image": "images/sample1.jpg",
+    "debut": 2017,
+    "members": "Solo",
+    "popularity": 234,
+    "gender": "Female",
+    "genre": "Pop",
+    "country": "Spain"
+  },
+  {
+    "id": "a2",
+    "name": "artista dos",
+    "aliases": ["dos"],
+    "image": "images/sample2.jpg",
+    "debut": 2014,
+    "members": 4,
+    "popularity": 80,
+    "gender": "Male",
+    "genre": "Rock",
+    "country": "UK"
+  },
+  {
+    "id": "a3",
+    "name": "luna vega",
+    "aliases": ["luna"],
+    "image": null,
+    "debut": 2020,
+    "members": "Solo",
+    "popularity": 45,
+    "gender": "Female",
+    "genre": "Pop",
+    "country": "Mexico"
+  },
+  {
+    "id": "a4",
+    "name": "neon district",
+    "aliases": ["neon"],
+    "image": null,
+    "debut": 2016,
+    "members": 3,
+    "popularity": 120,
+    "gender": "Mixed",
+    "genre": "Electronic",
+    "country": "France"
+  },
+  {
+    "id": "a5",
+    "name": "los del puerto",
+    "aliases": ["puerto"],
+    "image": null,
+    "debut": 2009,
+    "members": 5,
+    "popularity": 310,
+    "gender": "Mixed",
+    "genre": "Latin",
+    "country": "Spain"
+  },
+  {
+    "id": "a6",
+    "name": "sakura echo",
+    "aliases": ["sakura"],
+    "image": null,
+    "debut": 2012,
+    "members": "Solo",
+    "popularity": 15,
+    "gender": "Female",
+    "genre": "J-Pop",
+    "country": "Japan"
+  },
+  {
+    "id": "a7",
+    "name": "iron whales",
+    "aliases": ["whales"],
+    "image": null,
+    "debut": 2005,
+    "members": 4,
+    "popularity": 260,
+    "gender": "Male",
+    "genre": "Metal",
+    "country": "USA"
+  },
+  {
+    "id": "a8",
+    "name": "midnight maria",
+    "aliases": ["maria"],
+    "image": null,
+    "debut": 2019,
+    "members": "Solo",
+    "popularity": 95,
+    "gender": "Female",
+    "genre": "Indie",
+    "country": "Argentina"
+  },
+  {
+    "id": "a9",
+    "name": "nordic pulse",
+    "aliases": ["pulse"],
+    "image": null,
+    "debut": 2011,
+    "members": 2,
+    "popularity": 170,
+    "gender": "Mixed",
+    "genre": "Pop",
+    "country": "Sweden"
+  },
+  {
+    "id": "a10",
+    "name": "rio chrome",
+    "aliases": ["rio"],
+    "image": null,
+    "age": 2018,
+    "handsome": 6,
+    "popularity": 210,
+    "nigga": "Male",
+    "country": "Brazil"
+  }
+]
