@@ -10,7 +10,7 @@ const $reset = document.getElementById("reset");
 const $names = document.getElementById("names");
 
 // Canvas placeholder (cuando no hay imagen)
-//let $canvasEmpty = null;
+let $canvasEmpty = null;
 
 /**
  * =========================
